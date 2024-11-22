@@ -4,6 +4,7 @@ import 'package:todo_app/core/text.dart';
 import 'package:todo_app/core/text_them.dart';
 import 'package:todo_app/thems/colors.dart';
 import 'package:todo_app/thems/icons.dart';
+import 'package:todo_app/widgets/lisTitle.dart';
 import 'package:todo_app/widgets/my_icon.dart';
 import 'package:todo_app/widgets/my_text.dart';
 
@@ -30,7 +31,7 @@ class TitleWidget extends StatelessWidget {
               icon: const MyIcon(
                 icon: AppIcons.drawer,
                 size: 32,
-                color: Color.fromARGB(255, 189, 185, 185),
+                color: AppColor.grey,
               ),
             ),
             const SizedBox(width: 10),
@@ -46,7 +47,7 @@ class TitleWidget extends StatelessWidget {
           ],
         ),
         const Divider(
-          color: AppColor.divider,
+          color: AppColor.grey,
           thickness: 2,
           indent: 0,
           endIndent: 0,
@@ -81,7 +82,7 @@ class TitleWidget extends StatelessWidget {
               child: MyIcon(
                 imageAsset: AppImage.gif,
                 size: 80,
-                color: Color.fromARGB(255, 189, 185, 185),
+                color: AppColor.grey,
               ),
             ),
           ],
@@ -90,7 +91,6 @@ class TitleWidget extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-           
             Column(
               mainAxisSize: MainAxisSize.min,
               children: [
@@ -100,39 +100,37 @@ class TitleWidget extends StatelessWidget {
                 ),
                 const SizedBox(height: 5),
                 MyText(
-                  text: AppText.someText,
+                  text: AppText.category,
                   style: AppTextTheme.appBarTitle(context),
                 ),
               ],
             ),
             const SizedBox(width: 20),
-       
             Column(
               mainAxisSize: MainAxisSize.min,
               children: [
                 const MyIcon(
-                  imageAsset: AppImage.icon, 
+                  imageAsset: AppImage.icon,
                   size: 40,
                 ),
                 const SizedBox(height: 5),
                 MyText(
-                  text: AppText.someText, 
+                  text: AppText.calendar,
                   style: AppTextTheme.appBarTitle(context),
                 ),
               ],
             ),
-            const SizedBox(width: 20), 
-           
+            const SizedBox(width: 20),
             Column(
               mainAxisSize: MainAxisSize.min,
               children: [
                 const MyIcon(
-                  imageAsset: AppImage.icon, 
+                  imageAsset: AppImage.icon,
                   size: 40,
                 ),
                 const SizedBox(height: 5),
                 MyText(
-                  text: AppText.someText,
+                  text: AppText.search,
                   style: AppTextTheme.appBarTitle(context),
                 ),
               ],
@@ -140,7 +138,7 @@ class TitleWidget extends StatelessWidget {
           ],
         ),
         const Divider(
-          color: AppColor.divider,
+          color: AppColor.grey,
           thickness: 2,
           indent: 0,
           endIndent: 0,
@@ -179,6 +177,7 @@ class TitleWidget extends StatelessWidget {
             ),
           ],
         ),
+        My_Listitle(),
       ],
     );
   }

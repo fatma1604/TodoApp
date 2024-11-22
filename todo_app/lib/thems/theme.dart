@@ -10,7 +10,7 @@ class AppTheme {
     colorScheme: const ColorScheme.light(
       primary: AppColor.blue, 
       // ignore: deprecated_member_use
-      background: AppColor.pageColor, 
+      background: AppColor.secondaryBackground, //whit
     ),
   );
 
@@ -18,7 +18,7 @@ class AppTheme {
     brightness: Brightness.dark,
     useMaterial3: true,
     colorScheme: const ColorScheme.dark(
-      primary: AppColor.pageColor,
+      primary: AppColor.secondaryBackground,//whir
       // ignore: deprecated_member_use
       background: AppColor.primaryBackground 
     ),
