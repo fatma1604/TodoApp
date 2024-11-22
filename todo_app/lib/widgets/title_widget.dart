@@ -3,6 +3,8 @@ import 'package:todo_app/core/images.dart';
 import 'package:todo_app/core/text.dart';
 import 'package:todo_app/core/text_them.dart';
 import 'package:todo_app/thems/colors.dart';
+import 'package:todo_app/thems/icons.dart';
+import 'package:todo_app/widgets/my_icon.dart';
 import 'package:todo_app/widgets/my_text.dart';
 
 class TitleWidget extends StatelessWidget {
@@ -25,17 +27,20 @@ class TitleWidget extends StatelessWidget {
               onPressed: () {
                 Navigator.pushNamed(context, '/drawer');
               },
-              icon: Icon(Icons.home, size: 32, color: iconColor),
+              icon: const MyIcon(
+                icon: AppIcons.drawer,
+                size: 32,
+                color: Color.fromARGB(255, 189, 185, 185),
+              ),
             ),
             const SizedBox(width: 10),
             GestureDetector(
               onTap: () {
                 Navigator.pushNamed(context, '/drawer');
               },
-              child: Image.asset(
-                AppImage.icon,
-                width: 32,
-                height: 32,
+              child: const MyIcon(
+                imageAsset: AppImage.icon,
+                size: 32,
               ),
             ),
           ],
@@ -49,12 +54,11 @@ class TitleWidget extends StatelessWidget {
         const SizedBox(height: 20),
         Row(
           children: [
-            Padding(
-              padding: const EdgeInsets.only(left: 20.0),
-              child: Image.asset(
-                AppImage.arrow,
-                width: 60,
-                height: 60,
+            const Padding(
+              padding: EdgeInsets.only(left: 20.0),
+              child: MyIcon(
+                imageAsset: AppImage.arrow,
+                size: 50,
               ),
             ),
             const SizedBox(width: 10),
@@ -72,13 +76,66 @@ class TitleWidget extends StatelessWidget {
               ],
             ),
             const SizedBox(width: 10),
-            Padding(
-              padding: const EdgeInsets.only(right: 0),
-              child: Image.asset(
-                AppImage.gif,
-                width: 80,
-                height: 80,
+            const Padding(
+              padding: EdgeInsets.only(right: 0),
+              child: MyIcon(
+                imageAsset: AppImage.gif,
+                size: 80,
+                color: Color.fromARGB(255, 189, 185, 185),
               ),
+            ),
+          ],
+        ),
+        const SizedBox(height: 20),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+           
+            Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                const MyIcon(
+                  imageAsset: AppImage.icon,
+                  size: 40,
+                ),
+                const SizedBox(height: 5),
+                MyText(
+                  text: AppText.someText,
+                  style: AppTextTheme.appBarTitle(context),
+                ),
+              ],
+            ),
+            const SizedBox(width: 20),
+       
+            Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                const MyIcon(
+                  imageAsset: AppImage.icon, 
+                  size: 40,
+                ),
+                const SizedBox(height: 5),
+                MyText(
+                  text: AppText.someText, 
+                  style: AppTextTheme.appBarTitle(context),
+                ),
+              ],
+            ),
+            const SizedBox(width: 20), 
+           
+            Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                const MyIcon(
+                  imageAsset: AppImage.icon, 
+                  size: 40,
+                ),
+                const SizedBox(height: 5),
+                MyText(
+                  text: AppText.someText,
+                  style: AppTextTheme.appBarTitle(context),
+                ),
+              ],
             ),
           ],
         ),
@@ -90,12 +147,12 @@ class TitleWidget extends StatelessWidget {
         ),
         Row(
           children: [
-            Padding(
-              padding: const EdgeInsets.only(left: 20.0),
-              child: Image.asset(
-                AppImage.bear,
-                width: 60,
-                height: 60,
+            const Padding(
+              padding: EdgeInsets.only(left: 20.0),
+              child: MyIcon(
+                imageAsset: AppImage.bear,
+                size: 50,
+                color: Color.fromARGB(255, 189, 185, 185),
               ),
             ),
             const SizedBox(width: 10),
@@ -113,12 +170,11 @@ class TitleWidget extends StatelessWidget {
               ],
             ),
             const SizedBox(width: 10),
-            Padding(
-              padding: const EdgeInsets.only(right: 0),
-              child: Image.asset(
-                AppImage.arrow1,
-                width: 50,
-                height: 50,
+            const Padding(
+              padding: EdgeInsets.only(right: 0),
+              child: MyIcon(
+                imageAsset: AppImage.arrow1,
+                size: 50,
               ),
             ),
           ],

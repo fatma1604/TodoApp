@@ -1,8 +1,10 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:todo_app/thems/colors.dart';
 
 class AppTextTheme {
-  //style
+
   AppTextTheme._();
 
   static TextStyle appBarTitle(BuildContext context) {
