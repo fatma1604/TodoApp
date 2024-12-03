@@ -9,8 +9,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:todo_app/core/aprouta.dart';
-import 'package:todo_app/thems/theme.dart';
-import 'package:todo_app/todo_app.dart';
+import 'package:todo_app/core/theme.dart';
+import 'package:todo_app/features/todo_app/todo_app.dart';
 
 
 

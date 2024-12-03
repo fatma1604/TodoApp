@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:todo_app/thems/colors.dart';
+import 'package:todo_app/core/colors.dart';
 
 class AppTextTheme {
   AppTextTheme._();
@@ -13,4 +13,8 @@ class AppTextTheme {
       fontSize: 15.sp,
     );
   }
+
+  static const TextStyle today = TextStyle(
+    color: AppColor.secondaryBackground,
+  );
 }
