@@ -10,7 +10,6 @@ class AppIconTheme {
     return IconButton(
       onPressed: () => Navigator.pop(context),
       icon: const Icon(Icons.format_list_bulleted),
-      iconSize: 25.sp,
     );
   }
 
@@ -19,92 +18,81 @@ class AppIconTheme {
       icon: const Icon(
         Icons.calendar_month_outlined,
       ),
-      iconSize: 25.sp,
       onPressed: () {
         Navigator.pop(context);
       },
     );
   }
 
-  static IconButton  search(BuildContext context) {
+  static IconButton search(BuildContext context) {
     return IconButton(
       icon: const Icon(
-        Icons. search,
+        Icons.search,
       ),
-      iconSize: 25.sp,
       onPressed: () {
         Navigator.pop(context);
       },
     );
   }
-    static IconButton  drawer(BuildContext context) {
+
+  static IconButton drawer(BuildContext context) {
     return IconButton(
       icon: const Icon(
-         Icons.menu_sharp,
+        Icons.menu_sharp,
       ),
-      iconSize: 32.sp,
       onPressed: () {
-         Navigator.pushNamed(context, '/drawer');
+        Navigator.pushNamed(context, '/drawer');
       },
     );
   }
-   static IconButton icon(BuildContext context) {
-  return IconButton(
-    icon: Image.asset(
-      AppImage.icon,
-      width: 32.sp, 
-   
-    ),
-    onPressed: () {
-      Navigator.pushNamed(context, '/drawer');
-    },
-  );
-}
- static Widget arrow(BuildContext context) {
-  return Container(
-    child: Image.asset(
-      AppImage.arrow, 
-      width: 40.sp, 
-      height: 40.sp,
-    ),
-  );
-}
 
- static Widget gif(BuildContext context) {
-  return Container(
-    child: Image.asset(
-     AppImage.gif ,
-      width: 60.sp, 
-      color: AppColor.grey,
-    
-    ),
-  );
-}
+  static IconButton icon(BuildContext context) {
+    return IconButton(
+      icon: Image.asset(
+        AppImage.icon,
+        width: 28.sp,
+      ),
+      onPressed: () {
+        Navigator.pushNamed(context, '/drawer');
+      },
+    );
+  }
 
- static Widget bear(BuildContext context) {
-  return Container(
-    child: Image.asset(
-     AppImage.bear ,
-      width: 60.sp, 
-      color: AppColor.grey,
-    
-    ),
-  );
-}
+  static Widget arrow(BuildContext context) {
+    return Container(
+      child: Image.asset(
+        AppImage.arrow,
+        width: 40.sp,
+      ),
+    );
+  }
 
- static Widget arrow2(BuildContext context) {
-  return Container(
-    child: Image.asset(
-    AppImage.arrow1,
-      width: 50.sp, 
-      
-    
-    ),
-  );
-}
+  static Widget gif(BuildContext context) {
+    return Container(
+      child: Image.asset(
+        AppImage.gif,
+        width: 60.sp,
+        color: AppColor.grey,
+      ),
+    );
+  }
 
+  static Widget bear(BuildContext context) {
+    return Container(
+      child: Image.asset(
+        AppImage.bear,
+        width: 60.sp,
+        color: AppColor.grey,
+      ),
+    );
+  }
 
-
-
-  
+  static Widget arrow2(BuildContext context) {
+    return Container(
+      child: Image.asset(
+        AppImage.arrow1,
+        width: 40.sp,
+      ),
+    );
+  }
 }

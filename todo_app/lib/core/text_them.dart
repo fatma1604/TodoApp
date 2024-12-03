@@ -11,7 +11,6 @@ class AppTextTheme {
     return TextStyle(
       color: AppColor.primaryBackground,
       fontSize: 15.sp,
-      fontWeight: FontWeight.normal,
     );
   }
 }
