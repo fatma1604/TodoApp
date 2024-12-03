@@ -17,4 +17,6 @@ final class AppColor {
   // Accent Colors
   static const Color blue = Colors.blue;  
   static const Color black = Color.fromARGB(255, 11, 11, 11);  
+  
+  static const Color pageColor = Colors.white;
 }
