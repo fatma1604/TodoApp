@@ -13,5 +13,7 @@ class AppText {
 
   static const String week = "HAFTA BOYUNCA";
   static const String month = "Bu Ay ";
-   static const String latter = "Daha sonra ";
+  static const String latter = "Daha sonra ";
+
+  static const String user = 'User Name';
 }

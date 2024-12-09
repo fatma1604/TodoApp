@@ -43,13 +43,16 @@ class TitleWidget extends StatelessWidget {
   }
 
   Widget _buildRowWithIcons(BuildContext context) {
-    return Row(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        AppIconTheme.drawer(context),
-        const SizedBox(width: 10),
-        AppIconTheme.icon(context),
-      ],
+    return Builder(
+      builder: (BuildContext scaffoldContext) {
+        return Row(
+          children: [
+            AppIconTheme.drawer(scaffoldContext),
+            const SizedBox(width: 10),
+            AppIconTheme.icon(context),
+          ],
+        );
+      },
     );
   }
 
@@ -141,4 +144,3 @@ class TitleWidget extends StatelessWidget {
 }
 
 
-//ff

@@ -41,16 +41,15 @@ class AppIconTheme {
         ));
   }
 
-  static IconButton drawer(BuildContext context) {
-    return IconButton(
-      icon: const Icon(
-        Icons.menu_sharp,
-      ),
-      onPressed: () {
-        Navigator.pushNamed(context, '/drawer');
-      },
-    );
-  }
+static IconButton drawer(BuildContext context) {
+  return IconButton(
+    icon: const Icon(Icons.menu_sharp),
+    onPressed: () {
+      Scaffold.of(context).openDrawer();
+    },
+  );
+}
+
 
   static IconButton icon(BuildContext context) {
     return IconButton(

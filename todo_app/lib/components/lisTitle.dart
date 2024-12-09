@@ -1,5 +1,3 @@
-// ignore_for_file: file_names, camel_case_types
-
 import 'package:flutter/material.dart';
 import 'package:todo_app/components/IconTheme.dart';
 import 'package:todo_app/core/colors.dart';
@@ -15,17 +13,18 @@ class My_Listitle extends StatelessWidget {
       child: Column(
         children: [
           ListTile(
-              title: const Text(
-                AppText.today,
-                style: AppTextTheme.today,
-              ),
-              tileColor: AppColor.listitle,
-              trailing: AppIconTheme.home(context)),
+            title: Text(
+              AppText.today,
+              style: AppTextTheme.today(context), // Removed const here
+            ),
+            tileColor: AppColor.listitle,
+            trailing: AppIconTheme.home(context),
+          ),
           const SizedBox(height: 10),
           ListTile(
-            title: const Text(
+            title: Text(
               AppText.tomorrow,
-              style: AppTextTheme.today,
+              style: AppTextTheme.today(context), // Removed const here
             ),
             tileColor: AppColor.listitle1,
             trailing: const Icon(
@@ -38,9 +37,9 @@ class My_Listitle extends StatelessWidget {
           ),
           const SizedBox(height: 10),
           ListTile(
-            title: const Text(
+            title: Text(
               AppText.week,
-              style: AppTextTheme.today,
+              style: AppTextTheme.today(context), // Removed const here
             ),
             tileColor: AppColor.amber,
             trailing: const Icon(
@@ -53,9 +52,9 @@ class My_Listitle extends StatelessWidget {
           ),
           const SizedBox(height: 10),
           ListTile(
-            title: const Text(
+            title: Text(
               AppText.month,
-              style: AppTextTheme.today,
+              style: AppTextTheme.today(context), // Removed const here
             ),
             tileColor: AppColor.green,
             trailing: const Icon(
@@ -68,9 +67,9 @@ class My_Listitle extends StatelessWidget {
           ),
           const SizedBox(height: 10),
           ListTile(
-            title: const Text(
+            title: Text(
               AppText.latter,
-              style: AppTextTheme.today,
+              style: AppTextTheme.today(context), // Removed const here
             ),
             tileColor: AppColor.pink,
             trailing: const Icon(
